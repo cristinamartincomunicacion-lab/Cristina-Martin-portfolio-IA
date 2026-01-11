@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio profesional de Cristina Martín: Comunicación institucional, audiovisual e IA aplicada. Proyecto destacado: IA aplicada al audiovisual para la UAM (Instituto RTVE, 2025)." />
+  <title>Cristina Martín · Comunicación & IA aplicada</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#101a33;
+      --muted:#a9b4d0;
+      --text:#e9eeff;
+      --accent:#7fd3ff;
+      --accent2:#9cffc9;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      background: radial-gradient(1200px 700px at 20% 0%, rgba(127,211,255,.25), transparent 60%),
+                  radial-gradient(900px 600px at 80% 10%, rgba(156,255,201,.18), transparent 55%),
+                  linear-gradient(180deg, var(--bg), #070a14 65%);
+      color:var(--text);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 18px 60px}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      padding:14px 16px;border:1px solid var(--border);border-radius:999px;
+      background: rgba(16,26,51,.55);backdrop-filter: blur(10px);
+    }
+    .brand{display:flex;align-items:center;gap:10px}
+    .dot{width:10px;height:10px;border-radius:999px;background: linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 6px rgba(127,211,255,.14)}
+    .brand b{font-weight:750;letter-spacing:.2px}
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{
+      padding:8px 12px;border-radius:999px;border:1px solid var(--border);
+      background: rgba(255,255,255,.04);text-decoration:none;font-size:13px;color:var(--muted);
+    }
+    .pill:hover{border-color:rgba(127,211,255,.5);color:var(--text)}
+    .hero{padding:44px 6px 28px;display:grid;grid-template-columns: 1.25fr .75fr;gap:18px;align-items:stretch}
+    @media (max-width: 900px){.hero{grid-template-columns:1fr}}
+    h1{margin:0 0 10px;font-size:40px;letter-spacing:-.6px;line-height:1.08}
+    .subtitle{color:var(--muted);font-size:16px;margin:0 0 22px}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 14px;border-radius:12px;border:1px solid var(--border);
+      background: rgba(255,255,255,.05);text-decoration:none;
+      color:var(--text);font-weight:650;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(127,211,255,.18), rgba(156,255,201,.12));
+      border-color: rgba(127,211,255,.35);
+    }
+    .btn:hover{transform: translateY(-1px)}
+    .card{
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      background: rgba(16,26,51,.62);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{font-size:12px;color:var(--muted);border:1px solid var(--border);padding:7px 10px;border-radius:999px;background: rgba(255,255,255,.03)}
+    .kpi{
+      display:grid;grid-template-columns:1fr 1fr;gap:10px;
+      height:100%;
+    }
+    .kpi .box{
+      border:1px solid var(--border);border-radius:16px;padding:14px;background: rgba(255,255,255,.03);
+    }
+    .kpi .num{font-size:20px;font-weight:800}
+    .kpi .lbl{font-size:12px;color:var(--muted);margin-top:4px}
+    section{margin-top:18px}
+    h2{margin:0 0 12px;font-size:18px;letter-spacing:-.2px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width: 900px){.grid{grid-template-columns:1fr}}
+    ul{margin:10px 0 0 18px;color:var(--muted)}
+    li{margin:7px 0}
+    .twoCol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width: 900px){.twoCol{grid-template-columns:1fr}}
+    .muted{color:var(--muted)}
+    .footer{margin-top:22px;color:var(--muted);font-size:12px;text-align:center}
+    .hr{height:1px;background: var(--border);margin:12px 0}
+    .small{font-size:13px;color:var(--muted)}
+    .callout{
+      border:1px dashed rgba(127,211,255,.5);
+      background: rgba(127,211,255,.06);
+      border-radius: 16px;
+      padding:14px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <b>Cristina Martín</b><br />
+          <span class="small">Comunicación institucional · Audiovisual · IA aplicada</span>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Navegación">
+        <a class="pill" href="#proyecto">Proyecto</a>
+        <a class="pill" href="#competencias">Competencias</a>
+        <a class="pill" href="#herramientas">Herramientas</a>
+        <a class="pill" href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="card">
+        <h1>IA con criterio, creatividad con objetivos.</h1>
+        <p class="subtitle">
+          Portfolio profesional enfocado en <b>comunicación institucional</b>, <b>contenido audiovisual</b> y <b>aplicación práctica de IA generativa</b>.
+          Proyectos documentados, iteración guiada por objetivos y adaptación a canales (web / RRSS).
+        </p>
+
+        <div class="meta">
+          <span class="tag">Prompt engineering</span>
+          <span class="tag">Marketing digital</span>
+          <span class="tag">Producción audiovisual</span>
+          <span class="tag">Edición & montaje</span>
+          <span class="tag">Institucional / educativo</span>
+        </div>
+
+        <div class="ctaRow">
+          <!-- Reemplaza los enlaces por los tuyos -->
+          <a class="btn primary" href="#proyecto">Ver proyecto destacado</a>
+          <a class="btn" href="Portfolio_Cristina_Martin_IA_Audiovisual.pdf" target="_blank" rel="noopener">Descargar PDF</a>
+          <a class="btn" href="#contacto">Contactar</a>
+        </div>
+
+        <div class="hr"></div>
+        <div class="callout">
+          <b>Enfoque:</b> IA como herramienta de apoyo (no automatismo). Iteración, evaluación y decisión final según objetivos de comunicación.
+        </div>
+      </div>
+
+      <aside class="card">
+        <h2>Resumen rápido</h2>
+        <div class="kpi">
+          <div class="box">
+            <div class="num">RTVE</div>
+            <div class="lbl">Proyecto formativo aplicado</div>
+          </div>
+          <div class="box">
+            <div class="num">UAM</div>
+            <div class="lbl">Caso institucional / educativo</div>
+          </div>
+          <div class="box">
+            <div class="num">I2V</div>
+            <div class="lbl">Imagen → Vídeo + edición</div>
+          </div>
+          <div class="box">
+            <div class="num">Web/RRSS</div>
+            <div class="lbl">Adaptación de formatos</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <p class="small">
+          Si vas a enlazar desde LinkedIn, esta landing está optimizada para lectura rápida y credibilidad profesional.
+        </p>
+      </aside>
+    </main>
+
+    <section id="proyecto" class="grid">
+      <article class="card">
+        <h2>Proyecto destacado · IA aplicada al audiovisual – UAM</h2>
+        <p class="muted">
+          <b>Instituto RTVE · Curso ATRÉVETE · 2025</b><br />
+          Creación de una imagen y un vídeo de marketing institucional para promover la experiencia universitaria en el campus de la UAM.
+        </p>
+
+        <h2>Objetivo</h2>
+        <ul>
+          <li>Representar la vida universitaria en el campus y transmitir comunidad y bienestar.</li>
+          <li>Integrar la identidad UAM de forma sutil y coherente (logo como parte del entorno).</li>
+          <li>Crear una pieza breve, reutilizable y adaptable para <b>web</b> y <b>redes sociales</b>.</li>
+        </ul>
+
+        <h2>Proceso (alto nivel)</h2>
+        <ul>
+          <li><b>Imagen:</b> generación y mejora iterativa (luz, composición, naturalidad, logo).</li>
+          <li><b>Vídeo:</b> animación desde imagen (movimiento de estudiantes, encuadre y marca).</li>
+          <li><b>Optimización:</b> zoom out final y música de fondo sutil.</li>
+          <li><b>Edición:</b> montaje final y adaptación a formatos RRSS (vertical 9:16).</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Entregables</h2>
+        <ul>
+          <li>Imagen v1, v2 y versión definitiva (con evolución documentada).</li>
+          <li>Vídeo v1, v2 y versión definitiva.</li>
+          <li>Versión vertical (9:16) para RRSS.</li>
+          <li>Versión alternativa exploratoria (creación íntegra con IA) para aprendizaje comparativo.</li>
+          <li>Documento final con prompts, motivos de diseño y limitaciones.</li>
+        </ul>
+
+        <h2>Aprendizajes clave</h2>
+        <ul>
+          <li>La IA permite iterar rápido, pero exige criterio para mantener realismo institucional.</li>
+          <li>Las creaciones “todo IA” mejoran control visual, pero pueden perder contexto real.</li>
+          <li>Combinar IA + edición tradicional mejora cohesión, ritmo y preparación para canales.</li>
+        </ul>
+
+        <h2>Material</h2>
+        <p class="small muted">
+          Sugerencia: añade aquí enlaces a tu vídeo final (YouTube no listado / Drive) y/o capturas del proyecto.
+        </p>
+      </article>
+    </section>
+
+    <section id="competencias" class="grid">
+      <div class="card">
+        <h2>Competencias demostradas</h2>
+        <ul>
+          <li>Comunicación institucional y educativa</li>
+          <li>Estrategia de contenidos audiovisuales</li>
+          <li>IA generativa (imagen y vídeo)</li>
+          <li>Prompt engineering y control de iteraciones</li>
+          <li>Adaptación a formatos (web, Reels/TikTok/Shorts)</li>
+          <li>Documentación de procesos y reflexión crítica</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Valor diferencial</h2>
+        <p class="muted">
+          Combino generación automática con <b>criterio comunicativo</b> y <b>edición humana</b>, documentando decisiones
+          y evaluando límites/ventajas de cada herramienta para asegurar coherencia institucional.
+        </p>
+        <div class="hr"></div>
+        <p class="small muted">
+          En proyectos institucionales, priorizo: claridad narrativa, naturalidad, consistencia de marca y adecuación al canal.
+        </p>
+      </div>
+    </section>
+
+    <section id="herramientas" class="card">
+      <h2>Herramientas</h2>
+      <div class="twoCol">
+        <div>
+          <p class="muted"><b>IA</b></p>
+          <ul>
+            <li>Google Gemini (imagen)</li>
+            <li>Grok (image-to-video e iteración)</li>
+            <li>Runway (adaptación vertical RRSS)</li>
+            <li>Luma AI (exploración)</li>
+          </ul>
+        </div>
+        <div>
+          <p class="muted"><b>Edición / montaje</b></p>
+          <ul>
+            <li>Clipchamp (montaje y transiciones)</li>
+            <li>Música: librería gratuita / libre de derechos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <p class="muted">
+        <!-- Reemplaza estos campos -->
+        <b>Email:</b> tuemail@dominio.com<br />
+        <b>LinkedIn:</b> linkedin.com/in/tuusuario<br />
+        <b>Web/Portfolio:</b> tu-dominio.com
+      </p>
+      <p class="small muted">
+        Consejo: añade el enlace de esta landing en LinkedIn en “Destacado” y en “Información”.
+      </p>
+    </section>
+
+    <div class="footer">
+      © <span id="year"></span> · Cristina Martín · Portfolio IA aplicada al audiovisual
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
